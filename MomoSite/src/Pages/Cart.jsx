@@ -1,14 +1,18 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartProvider";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { cart, dispatch } = useContext(CartContext);
+  const navigate = useNavigate();
 
-  const totalAmount = cart.cartItems.reduce(
-    (total, item) => total + item.price * item.quantity,
-    0,
-  );
+const totalAmount = cart.cartItems.reduce(
+  (total, item) => total + item.caloriesPerServing*item.quantity,
+  0
+);
 
+console.log('Total amount = '+ totalAmount)
+  
   return (
     <div className="min-h-screen bg-gray-100 py-30 px-4">
       <div className="max-w-6xl mx-auto">
@@ -32,7 +36,7 @@ const Cart = () => {
                       <h2 className="text-lg font-semibold text-gray-800">
                         {item.name}
                       </h2>
-                      <p className="text-gray-500">Rs. {item.price}</p>
+                      <p className="text-gray-500">Rs. {item.caloriesPerServing}</p>
                     </div>
                   </div>
 
@@ -77,7 +81,10 @@ const Cart = () => {
                 <span>Rs. {totalAmount}</span>
               </div>
 
-              <button className="w-full mt-6 bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition">
+              <button className="w-full mt-6 bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition"
+              onClick={()=>{
+                navigate("/payment", {state: totalAmount})
+              }}>
                 Proceed to Checkout
               </button>
             </div>

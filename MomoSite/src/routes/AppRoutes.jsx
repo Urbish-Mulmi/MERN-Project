@@ -9,6 +9,9 @@ import PublicLayout from '../Layout/PublicLayout'
 import NotFound from '../Pages/NotFound'
 import ProductDetails from '../Pages/ProductDetails'
 import Cart from '../Pages/Cart'
+import Payment from '../Pages/Payment/Payment'
+import Success from '../Pages/Payment/Success'
+import Failure from '../Pages/Payment/Failure'
 
 
 const AppRoutes = () => {
@@ -22,6 +25,9 @@ const AppRoutes = () => {
               <Route path='/contact' element= {<Contact />}/>
               <Route path='/menu' element= {<Menu />}/>
               <Route path='/cart' element= {<Cart />}/>
+              <Route path='/payment' element= {<Payment />}/>
+              <Route path='/success' element= {<Success />}/>
+              <Route path='/failure' element= {<Failure/>}/>
           
               <Route path='/allergy-advice' element= {<AllergyAdvice />}/>
 
