@@ -12,7 +12,7 @@ import Cart from '../Pages/Cart'
 import Payment from '../Pages/Payment/Payment'
 import Success from '../Pages/Payment/Success'
 import Failure from '../Pages/Payment/Failure'
-import Login from '../Pages/auth/login'
+import Login from '../Pages/auth/Login'
 import Profile from '../Pages/Profile'
 import ProtectedRoutes from '../components/ProtectedRoutes'
 
