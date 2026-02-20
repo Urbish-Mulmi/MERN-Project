@@ -6,7 +6,7 @@ MomoCuisine is a **MERN stack web application** for ordering momos and other foo
 
 ---
 
-## 📌 Domain Change Notice
+## 📌 Important Domain Change Notice
 
 If the **domain name changes**, the **Application URI in Auth0 must be updated immediately** to ensure authentication works. Failure to update will cause login/signup failures.
 
@@ -20,3 +20,4 @@ If the **domain name changes**, the **Application URI in Auth0 must be updated i
 - **Authentication:** Auth0  
 - **Payment:** eSewa  
 - **Deployment:** Vercel
+
