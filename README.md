@@ -16,8 +16,9 @@ If the **domain name changes**, the **Application URI in Auth0 must be updated i
 
 ## 🛠 Tech Stack
 
-- **Frontend & Backend:** MERN (MongoDB, Express, React, Node.js)  
+- **Frontend & Backend:** MERN  
 - **Authentication:** Auth0  
 - **Payment:** eSewa  
 - **Deployment:** Vercel
+
 
