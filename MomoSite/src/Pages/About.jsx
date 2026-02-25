@@ -1,9 +1,11 @@
 import React from 'react'
+import AboutUsIntro from '../components/about-us/AboutUsIntro'
+
 
 const About = () => {
   return (
     <div>
-        about
+        <AboutUsIntro/>
     </div>
   )
 }
