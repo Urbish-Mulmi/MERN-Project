@@ -12,15 +12,16 @@ import Cart from '../Pages/Cart'
 import Payment from '../Pages/Payment/Payment'
 import Success from '../Pages/Payment/Success'
 import Failure from '../Pages/Payment/Failure'
-import Login from '../Pages/auth/Login'
+import Login from '../Pages/auth/login'
 import Profile from '../Pages/Profile'
-import ProtectedRoutes from '../components/ProtectedRoutes'
-
-
+import Service from '../Pages/Service'
+import ScrollToTop from '../components/common/ScrollToTop'
+import ProtectedRoutes from '../components/common/ProtectedRoutes'
 
 const AppRoutes = () => {
   return (
     <div>
+      <ScrollToTop />
         <Routes>
 
           {/* render the actual gui of website in default via  :
@@ -36,7 +37,8 @@ const AppRoutes = () => {
               <Route path='*' element= {<NotFound />}/>  
               <Route path='/about' element= {<About />}/>
               <Route path='/contact' element= {<Contact />}/>
-              <Route path='/menu' element= {<ProtectedRoutes><Menu/></ProtectedRoutes>}/>
+              <Route path='/service' element= {<Service/>}/>
+              <Route path='/menu' element= {<ProtectedRoutes><Menu/></ProtectedRoutes>}/>            
               <Route path='/cart' element= {<Cart />}/>
               <Route path='/payment' element= {<Payment />}/>
               <Route path='/success' element= {<Success />}/>
@@ -49,10 +51,11 @@ const AppRoutes = () => {
               
 
               
-              {/* enable dynamic routing for individual products clicked */}
+              {/* enable dynamic routing for individual products clicked in menu page by user*/}
               <Route path='/product-details/:id' element= {<ProductDetails />}/>
           </Route>
         </Routes>
+        
     </div>
   )
 }

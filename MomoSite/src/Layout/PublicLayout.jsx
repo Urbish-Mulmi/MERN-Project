@@ -1,8 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Hero from '../components/Hero'
+import Navbar from '../components/common/Navbar'
+import Footer from '../components/common/Footer'
+
 
 const PublicLayout = () => {
   return (
