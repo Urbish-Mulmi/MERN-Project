@@ -22,22 +22,22 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-4 text-[#6B788E] font-medium">
-          <NavLink className="py-2 px-3" to="./about">
+          <NavLink className="py-2 px-3   hover:text-[#0C6967]" to="./about">
             About Us
           </NavLink>
-          <NavLink className="py-2 px-3" to="./menu">
+          <NavLink className="py-2 px-3   hover:text-[#0C6967]" to="./menu ">
             Our Menu
           </NavLink>
-          <NavLink className="py-2 px-3" to="./services">
+          <NavLink className="py-2 px-3   hover:text-[#0C6967]" to="./service ">
             Our Services
           </NavLink>
-          <NavLink className="py-2 px-3" to="./allergy-advice">
+          <NavLink className="py-2 px-3   hover:text-[#0C6967]" to="./allergy-advice ">
             Allergy Advice
           </NavLink>
-          <NavLink className="py-2 px-3" to="./cart">
+          <NavLink className="py-2 px-3   hover:text-[#0C6967]" to="./cart ">
             Cart
           </NavLink>
-          <NavLink className="py-2 px-3" to="./profile">
+          <NavLink className="py-2 px-3   hover:text-[#0C6967]" to="./profile ">
             Profile
           </NavLink>
         </div>
@@ -46,10 +46,34 @@ const Navbar = () => {
       {/* Social Icons & Buttons */}
       <div className="flex items-center gap-6">
         <div className="flex gap-4">
-          <FaFacebook size={32} className="text-[#A6AEBB]" />
-          <FaTiktok size={32} className="bg-[#A6AEBB] text-white p-1.5 rounded-full" />
-          <FaInstagram size={32} className="bg-[#A6AEBB] text-white p-1.5 rounded-full" />
+          <FaFacebook size={32} className="text-[#A6AEBB] rounded-full
+           hover:text-blue-500 transition-all duration-300" />
+          <FaTiktok size={32} className="bg-[#A6AEBB] text-white p-1.5 rounded-full
+           hover:bg-black transition-all duration-300" />
+          <FaInstagram size={32} className="bg-[#A6AEBB] text-white p-1.5 rounded-full hover:text-white 
+          hover:bg-gradient-to-tr from-[#feda75] via-[#d62976] to-[#4f5bd5]  transition-all duration-300 " />
         </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {/* Contact Us Button */}
         <NavLink

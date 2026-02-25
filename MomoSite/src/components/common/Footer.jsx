@@ -29,7 +29,7 @@ const Footer = () => {
               <div className="flex flex-col gap-3">
                 <Link
                   to="/about"
-                  className="hover:font-semibold hover:underline hover:text-[#D95103]  "
+                  className="hover:font-semibold hover:underline hover:text-[#D95103]" 
                 >
                   About Us
                 </Link>
@@ -54,26 +54,12 @@ const Footer = () => {
             <div className="flex flex-col gap-4 w-[168px] ">
               <h4 className="font-bold text-[31px] text-[#0C6967]">Legals</h4>
               <div className="flex flex-col gap-3">
-                <Link
-                  to="/terms"
-                  className="hover:font-semibold hover:underline hover:text-[#D95103]  hover:font-semibold"
-                >
-                  Terms & Conditions
-                </Link>
+                <Link to="/"  className="hover:font-semibold hover:underline hover:text-[#D95103]" >Terms & Conditions</Link>
 
-                <Link
-                  to="/privacy"
-                  className="hover:font-semibold hover:underline hover:text-[#D95103]" 
-                >
-                  Privacy Policy
-                </Link>
+                <Link to="/"  className="hover:font-semibold hover:underline hover:text-[#D95103]" >Privacy Policy</Link>
+              
 
-                <Link
-                  to="/support"
-                  className="hover:font-semibold hover:underline hover:text-[#D95103]" 
-                >
-                  Support
-                </Link>
+                <Link to="/"  className="hover:font-semibold hover:underline hover:text-[#D95103]" >Support</Link>
               </div>
             </div>
 
