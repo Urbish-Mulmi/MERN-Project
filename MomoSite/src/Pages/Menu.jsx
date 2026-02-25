@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import MenuHero from '../components/menu/MenuHero';
+
 
 
 const Menu = () => {
@@ -26,7 +28,13 @@ const Menu = () => {
   
   
   return (
-        <div className="w-full mx-auto py-30  p-20">
+
+    <div>      
+      {/*  */}
+      <MenuHero />
+      {/*  */}
+
+              <div className="w-full mx-auto py-30  p-20">
       {recipes.length > 0 ? (
         <div className='flex flex-wrap justify-center'>
           {recipes.map((recipe) => (
@@ -54,7 +62,10 @@ const Menu = () => {
         <div className="text-center text-gray-500">Loading Recipes...</div>
       )}
     </div>
+    </div>
+
   )
 }
 
 export default Menu
+
