@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaArrowRight } from "react-icons/fa";
 const OurRecipes = () => {
   return (
     <div>
@@ -31,9 +31,10 @@ const OurRecipes = () => {
           <img src="images/dish2.png" alt="" className='w-[288px] h-[288px]'/>
           <img src="images/dish3.png" alt="" className='w-[288px] h-[288px]'/>
         </div>
-        
-        <button className='bg-[#0C6967] text-white px-10 py-5 w-[249px] h-[64px] rounded-[100px] flex justify-center'>Explore Our Menu</button>
-        
+          
+        <button className="bg-[#0C6967] text-white flex items-center gap-3  py-5 px-10 rounded-full mt-8 w-[249px] h-[64px] rounded-[100px] flex justify-center">
+          Explore Our Menu<FaArrowRight />
+       </button>
         
       </div>
     </div>
